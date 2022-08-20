@@ -130,6 +130,8 @@ def main():
             datas = list(datas)
         except FileNotFoundError:
             continue
+        else:
+            break
     remd = gen_remd(datas)
     td = time.localtime()
     td = tuple(td[:3])  # 今天
